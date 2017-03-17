@@ -7,6 +7,7 @@ def uninstall():
         packageName = packages.split(":")[-1].splitlines()[0]  
         os.popen("adb uninstall " + packageName)  
         print "uninstall " + packageName + " successed."  
+		
   
 if __name__ == "__main__":  
     uninstall()  
